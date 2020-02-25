@@ -1,0 +1,49 @@
+
+.header {
+    grid-area: header;
+    background: #283747;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px
+  }
+
+  .main
+  {
+    grid-area: main;
+    Background: #AD1457;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background: #00796B;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px
+  }
+
+  .footer {
+    grid-area: footer;
+    background: #283747;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px
+  }
+
+.container {
+    display: grid;
+    grid-template-columns: 20px auto 300px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-rows: 300px auto 175px;
+    /* grid-template-rows: repeat(3, 200px); */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    grid-template-areas:
+    "header header header"
+    "main main sidebar"
+    "footer footer footer"
+}
